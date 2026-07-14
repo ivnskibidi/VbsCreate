@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VbsCreate - Reference Guide</title>
+    <style>
+        * { box-sizing: border-box; font-family: 'Segoe UI', system-ui, sans-serif; margin: 0; padding: 0; }
+        body { background-color: #0f172a; color: #cbd5e1; padding: 30px; }
+        .container { max-width: 800px; margin: 0 auto; background: #1e293b; padding: 30px; border-radius: 12px; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.5); }
+        h1 { color: #38bdf8; text-align: center; margin-bottom: 25px; font-size: 32px; letter-spacing: 1px; }
+        h1 span { color: #f43f5e; }
+        pre { background: #0f172a; color: #4ade80; padding: 20px; border-radius: 8px; border: 1px solid #334155; font-family: 'Courier New', Courier, monospace; font-size: 15px; line-height: 1.5; white-space: pre-wrap; overflow-x: auto; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Vbs<span>Create</span></h1>
+    
+    <!-- Your exact raw tutorial text remains unchanged below -->
+    <pre>1.Make a txt file.
+ -Right click your desktop.
+  -Go to new, and press "Text Document"
+   -Double click the text document, and 
+2. Code/Text
+copy and paste or type what text you want after the text 
+please remove () on simple msgbox after using...
+simple msgbox1\/--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+MsgBox "Your message here", (0-64*), "Title Here"
+or
+MsgBox "Your message here", (0-64*), "Title Here"
+
+question\/------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+response = MsgBox("text1", vbYesNo + vbQuestion, "title")
+If response = vbYes Then
+MsgBox "output text yes"
+Else
+MsgBox "output text no"
+End If
+
+code      description                            buttons**
+0            ok                                          ok
+1            ok and cancel                       ok cancel
+2            abort retry ignore                  abort retry ignore
+3            yes no cancel                       yes no cancel
+4            yes no                                  yes no
+5            retry and cancel                   retry cancel
+16          critical!
+32          question?
+48          warning
+64          information?
+
+
+file opener\/
+Dim objShell
+Set objShell = CreateObject("vbsname/appnamehere")
+dim objshell is important!
+
+3. Once text has been made.
+  -Click Save ass.
+   -Put in the name of your vbs.
+    -at the end. at .vbs
+4. Click Your .vbs file</pre>
+</div>
+
+</body>
+</html>
